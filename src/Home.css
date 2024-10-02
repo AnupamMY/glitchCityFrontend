@@ -1,0 +1,8 @@
+
+.bg{
+    background-image: url(../assets/todoimage.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    filter: brightness(100%);
+}

@@ -1,0 +1,153 @@
+body{
+    background-image: none;
+}
+
+.new-chat-button{
+    opacity: 0;
+    pointer-events: none;
+}
+      
+
+.glitch {
+    text-shadow: 0.05em 0 0 rgba(255, 0, 0, 0.75),
+        -0.025em -0.05em 0 rgba(0, 255, 0, 0.75),
+        0.025em 0.05em 0 rgba(0, 0, 255, 0.75);
+
+    animation: glitch 2000ms infinite;
+}
+
+.glitch span {
+    position: absolute;
+
+}
+
+.glitch :first-child {
+    animation: glitch 650ms infinite;
+    clip-path: polygon(0 0, 100% 0, 100% 45%, 0 45%);
+    transform: translate(-0.05em, -0.025em);
+    opacity: .8;
+}
+
+.glitch :last-child {
+    animation: glitch 375ms infinite;
+    clip-path: polygon(0 60%, 100% 60%, 100% 100%, 0 100%);
+    transform: translate(-0.05em, -0.025em);
+    opacity: 0.8;
+
+}
+
+
+@keyframes glitch {
+    0% {
+        text-shadow: 0.05em 0 0 rgba(255, 0, 0, 0.75),
+            -0.05em -0.025em 0 rgba(0, 255, 0, 0.75),
+            0.025em 0.05em 0 rgba(0, 0, 255, 0.75);
+    }
+
+    14% {
+        text-shadow: 0.05em 0 0 rgba(255, 0, 0, 0.75),
+            -0.05em -0.025em 0 rgba(0, 255, 0, 0.75),
+            0.025em 0.05em 0 rgba(0, 0, 255, 0.75);
+    }
+
+    15% {
+        text-shadow: -0.05em -0.025em 0 rgba(255, 0, 0, 0.75),
+            0.025em 0.025em 0 rgba(0, 255, 0, 0.75),
+            -0.05em -0.05em 0 rgba(0, 0, 255, 0.75);
+    }
+
+    49% {
+        text-shadow: -0.05em -0.025em 0 rgba(255, 0, 0, 0.75),
+            0.025em 0.025em 0 rgba(0, 255, 0, 0.75),
+            -0.05em -0.05em 0 rgba(0, 0, 255, 0.75);
+    }
+
+    50% {
+        text-shadow: 0.025em 0.05em 0 rgba(255, 0, 0, 0.75),
+            0.05em 0 0 rgba(0, 255, 0, 0.75),
+            0 -0.05em 0 rgba(0, 0, 255, 0.75);
+    }
+
+    99% {
+        text-shadow: 0.025em 0.05em 0 rgba(255, 0, 0, 0.75),
+            0.05em 0 0 rgba(0, 255, 0, 0.75),
+            0 -0.05em 0 rgba(0, 0, 255, 0.75);
+    }
+
+    100% {
+        text-shadow: -0.025em 0 0 rgba(255, 0, 0, 0.75),
+            -0.025em -0.025em 0 rgba(0, 255, 0, 0.75),
+            -0.025em -0.05em 0 rgba(0, 0, 255, 0.75);
+    }
+}
+
+.imgGlitch :nth-child(1) {
+
+    opacity: 1;
+
+}
+
+
+.imgGlitch :nth-child(2) {
+
+    animation: imgglitch1 3.4s infinite steps(1);
+
+}
+
+.imgGlitch :nth-child(3) {
+
+    animation: imgglitch2 3.4s infinite steps(1);
+
+}
+
+
+.imgGlitch :nth-child(4) {
+
+    animation: imgglitch3 3.4s infinite steps(1);
+
+}
+
+
+
+
+@keyframes imgglitch1 {
+
+    0%,
+    100% {
+        opacity: 0;
+    }
+
+    92% {
+        opacity: 1;
+    }
+
+}
+
+
+
+@keyframes imgglitch2 {
+
+    0%,
+    100% {
+        opacity: 0;
+    }
+    93% {
+        opacity: 1;
+    }
+
+    95% {
+        opacity: 1;
+    }
+}
+
+@keyframes imgglitch3 {
+
+    0%,
+    100% {
+        opacity: 0;
+    }
+
+    96% {
+        opacity: 1;
+    }
+}

@@ -1,0 +1,8 @@
+@font-face {
+    font-family: 'myfont';
+    src: url('../assets/font/Ofform-Regular.woff2') format('woff2'),
+         url('../assets/font/Ofform-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+  }
+  
